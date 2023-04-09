@@ -1,0 +1,23 @@
+{% extends "AppJavi/padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+<section>
+
+    <h1>Please insert dog's data.</h1>
+
+    <form action="" method="POST">{% csrf_token %}
+
+        <table>
+
+            {{ my_form.as_table }}
+
+        </table>
+
+        <input type="submit", value="Submit">
+
+    </form>
+
+</section>
+
+{% endblock %}

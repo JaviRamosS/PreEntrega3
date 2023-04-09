@@ -1,0 +1,15 @@
+{% extends "AppJavi/padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+<section>
+    <h1>Please type the breed you are looking for.</h1>
+
+    <form action="/AppJavi/search/" method="GET">
+
+        {{search_form}}
+        <input type="submit" value="Search">
+    </form>
+
+</section>
+{% endblock %}

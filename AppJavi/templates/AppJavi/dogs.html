@@ -1,0 +1,22 @@
+{% extends "AppJavi/padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+<section>
+    <h1>This is the list of registered dogs.<h1>
+
+</section>
+
+{% if dogs %}
+<ul>
+{% for dog in dogs %}
+
+<li>
+    Name:{{dog.name}} - Age:{{dog.age}} - Breed:{{dog.breed}} - Owner:{{dog.owner_name}}
+</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+
+{% endblock %}
