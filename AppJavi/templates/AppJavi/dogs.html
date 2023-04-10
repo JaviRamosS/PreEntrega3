@@ -2,21 +2,22 @@
 {% load static %}
 
 {% block contenidoQueCambia %}
-<section>
-    <h1>This is the list of registered dogs.<h1>
+<div class="p-5">
+    <section>
+        <h2 class="display-4">This is the list of registered dogs.<h2>
 
-</section>
+    </section>
 
-{% if dogs %}
-<ul>
-{% for dog in dogs %}
+    {% if dogs %}
+    <ul class="list-group">
+    {% for dog in dogs %}
 
-<li>
-    Name:{{dog.name}} - Age:{{dog.age}} - Breed:{{dog.breed}} - Owner:{{dog.owner_name}}
-</li>
-{% endfor %}
-</ul>
-{% endif %}
+    <li class="list-group-item">
+        Name: {{dog.name}} - Age: {{dog.age}} - Breed: {{dog.breed}} - Owner: {{dog.owner_name}}
+    </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
 
-
+</div>
 {% endblock %}
