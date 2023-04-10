@@ -2,24 +2,26 @@
 {% load static %}
 
 {% block contenidoQueCambia %}
-<div class="p-5">
-    <section>
+<div class="container px-5">
+    <div class="p-5">
+        <section>
 
-        <h2 class="display-4">This is your search result.</h2>
-        
-        <p> We are searching: {{breed}} </p>
-
-        {% if dogs %}
-        <ul class="list-group w-25">
-        {% for dog in dogs %}
-        
-            <li class="list-group-item">{{dog.name}}</li>
+            <h2 class="display-4">This is your search result.</h2>
             
-        {% endfor %}
-        </ul>
-        {% endif %}
+            <p> We are searching: {{breed}} </p>
 
-    </section>
+            {% if dogs %}
+            <ul class="list-group w-25">
+            {% for dog in dogs %}
+            
+                <li class="list-group-item">{{dog.name}}</li>
+                
+            {% endfor %}
+            </ul>
+            {% endif %}
+
+        </section>
+    </div>
 </div>
 {% endblock %}
  

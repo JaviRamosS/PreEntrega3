@@ -2,16 +2,18 @@
 {% load static %}
 
 {% block contenidoQueCambia %}
-<div class="p-5">
-    <section>
-        <h2 class="display-4">Please type the breed you are looking for.</h2>
+<div class="container px-5">
+    <div class="p-5">
+        <section>
+            <h2 class="display-4">Please type the breed you are looking for.</h2>
 
-        <form action="/AppJavi/search/" method="GET">
+            <form action="/AppJavi/search/" method="GET">
 
-            <input type="text" name="breed" id="breed" class="form-control w-25">
-            <input type="submit" value="Search" class="btn btn-primary">
-        </form>
+                <input type="text" name="breed" id="breed" class="form-control w-25">
+                <input type="submit" value="Search" class="btn btn-primary">
+            </form>
 
-    </section>
+        </section>
+    </div>
 </div>
 {% endblock %}

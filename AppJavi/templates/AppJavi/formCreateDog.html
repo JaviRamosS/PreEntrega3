@@ -2,23 +2,25 @@
 {% load static %}
 
 {% block contenidoQueCambia %}
-<div class="p-5">
-    <section>
+<div class="container px-5">
+    <div class="p-5">
+        <section>
 
-        <h2 class="display-4">Please insert dog's data.</h2>
+            <h2 class="display-4">Please insert dog's data.</h2>
 
-        <form action="" method="POST">{% csrf_token %}
+            <form action="" method="POST">{% csrf_token %}
 
-            <table>
+                <table>
 
-                {{ my_form.as_table }}
+                    {{ my_form.as_table }}
 
-            </table>
+                </table>
 
-            <input type="submit" value="Submit" class="btn btn-primary">
+                <input type="submit" value="Submit" class="btn btn-primary">
 
-        </form>
+            </form>
 
-    </section>
+        </section>
+    </div>
 </div>
 {% endblock %}
