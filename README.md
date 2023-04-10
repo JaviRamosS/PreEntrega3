@@ -6,6 +6,10 @@ Este proyecto corresponde a la Tercera Pre-Entrega de Javiera Ramos.
 
 La aplicación se trata de poder tener un registro de perros, sus razas, edades y de sus dueños y poder buscar perritos a través de sus razas.
 
+### Requerimientos técnicos
+* Python 3.11
+* Django 4.2
+
 ### URLs
 * "/AppJavi": home de la aplicación.
 * "/AppJavi/dogs/": listado de todos los perros registrados en la aplicación.
