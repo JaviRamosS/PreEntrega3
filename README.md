@@ -11,7 +11,7 @@ La aplicación se trata de poder tener un registro de perros, sus razas, edades 
 * Django 4.2
 
 ### URLs
-*"/admin/": sitio de administración de la aplicación.
+* "/admin/": sitio de administración de la aplicación.
 * "/AppJavi": home de la aplicación.
 * "/AppJavi/about/": información sobre el creador de la aplicación y sobre la aplicación misma.
 * "/AppJavi/dogs/": listado de todos los perros registrados en la aplicación.
